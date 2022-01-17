@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep muzyczny "Melodyjka"</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="icon.png">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="logo.png" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="#" class="current">Strona Główna</a></li>
+                        <li><a href="produkty.html">Produkty</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="">O nas</a></li>
+                        <li><a href="konto.html">Konto</a></li>
+                    </ul>
+                </nav>
+                <a href="koszyk.html"><img src="koszyk.png" width="30px" height="30px"></a>
+                <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Strona studencka na zaliczenie przedmiotu</h1>
+                    <p>Melodyjka i szafa gra</p>
+                    <a href="produkty.html" class="btn">Sprawdź &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="w3-content">
+        <center><img class="mySlides" src="bpoz.png" alt="custom_html_banner1" style="width:50%">
+            <center>
+                <center><img class="mySlides" src="bpoz.png" alt="custom_html_banner1" style="width:50%">
+                    <center>
+                        <center><img class="mySlides" src="bpoz.png" alt="custom_html_banner1" style="width:50%">
+                            <center>
+                                <center><img class="mySlides" src="bpoz.png" alt="custom_html_banner1"
+                                        style="width:50%">
+                                    <center>
+                                        <button class="w3-button w3-black w3-display-left"
+                                            onclick="plusDivs(-1)">&#10094;</button>
+                                        <button class="w3-button w3-black w3-display-right"
+                                            onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+
+    <div class="kategorie">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="g1.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="o1.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="a1.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="small-container">
+        <h2 class="title">Polecane Produkty</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="k1.jpg">
+                <h4>Klawiatura MIDI</h4>
+                <p>450 zł</p>
+            </div>
+            <div class="col-4">
+                <img src="ke2.jpg">
+                <h4>Keyboard</h4>
+                <p>1250 zł</p>
+            </div>
+            <div class="col-4">
+                <img src="m1.jpg">
+                <h4>Mikrofon</h4>
+                <p>250 zł</p>
+            </div>
+        </div>
+        <h2 class="title">Najnowsze produkty</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="a1.jpg">
+                <h4>Akordeon</h4>
+                <p>550 zł</p>
+            </div>
+            <div class="col-4">
+                <a href="gitara.html"><img src="g1.jpg"></a>
+                <a href="gitara.html">
+                    <h4>Gitara Klasyczna</h4>
+                </a>
+                <p>400 zł</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Twórcami strony są: Krzysztof Świec i Jędrzej Truszczyński na zajęcia z marketingu internetowego
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 } if (n < 1) { slideIndex = x.length } for
+                (i = 0; i < x.length; i++) { x[i].style.display = "none"; }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>

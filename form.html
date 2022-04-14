@@ -32,27 +32,33 @@
         
     </div>
 <div class="small-container">
-    <div class="box">             
-        <h1>Formularz kontaktowy :</h1>             
-        <label>
-        <span>Nazwa użytkownika</span>                
-        <input type="text" class="wpis" name="nazwa" id="nazwa"/>             
-        </label>              
-        <label>                
-        <span>E-mail :</span>
-        <input type="text" class="wpis" name="email" id="email"/>             
-        </label>              
-        <label>                 
-        <span>Temat :</span>                 
-        <input type="text" class="wpis" name="temat" id="temat"/>             
-        </label>             
-        <label>                 
-        <span>Wiadomość :</span>                 
-        <textarea class="wiadomosc" name="wiadomosc" id="tresc"></textarea>                 
-        <input type="button" class="button" value="Wyślj" />             
-        </label>                                  
-        </div>     
-        </form>
+<form id='survey-form'>
+        <div class='form-input'>
+            <label id='name-label'>Imie</label>
+            <input type='text' id='name' placeholder='Podaj swoje Imie' class='form-input-size' required />
+        </div>
+        <div class='form-input'>
+            <label id='email-label'>Email</label>
+            <input type='email' id='email' placeholder='podaj swój email' class='form-input-size' required />
+        </div>
+        <div class='form-input'>
+            <label id='name-label'>Temat</label>
+            <input type='text' id='name' placeholder='Podaj temat' class='form-input-size' required />
+        </div>
+           
+        </div>
+
+      
+
+        <div class='form-input'>
+            <p>Wpisz swoją wiadomość</p>
+            <textarea type='text' placeholder='Wpisz wiadomość...'></textarea>
+        </div>
+
+        <div class='form-input'>
+            <button type='submit' id='submit'>Wyślij</button>
+        </div>
+    </form>
 </div>
 <br>
 <br>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="icon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Strona Główna</a></li>
+                    <li><a href="produkty.html">Produkty</a></li>
+                    <li><a href="kontakt.html" class="current">Kontakt</a></li>
+                    <li><a href="matprom.html">Materiały Promocyjne</a></li>
+                    <li><a href="konto.html">Konto</a></li>
+                </ul>
+            </nav>
+            <a href="koszyk.html"><img src="koszyk.png" width ="30px" height="30px"></a>
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        
+        
+    </div>
+<div class="small-container">
+<form method="post" action="" id='survey-form'>
+        <div class='form-input'>
+            <label id='email-label'>E-mail</label>
+            <input type='email' id='email' placeholder='podaj swój adres e-mail' class='form-input-size' required />
+        </div>
+
+        <div class='form-input'>
+            <button type='submit' id='submit'>Wyślij</button>
+        </div>
+    </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Twórcami strony są: Krzysztof Świec i Jędrzej Truszczyński na zajęcia z marketingu internetowego</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>
